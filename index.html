@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indoor Games Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#home">
+                    <div class="logo-container">
+                        <div class="logo-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h1>PEds<span>Play</span></h1>
+                    </div>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#games">Our Games</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Welcome to PEds Play</h1>
+            <p>Your ultimate destination for indoor playground fun in Savannah, GA</p>
+            <a href="#games" class="cta-button">Explore Our Games</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 data-aos="fade-up">About Us</h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h3>Our Story</h3>
+                    <p>Founded in 2010, Indoor Games Hub has been the premier destination for board game enthusiasts and table sports lovers. We started with a vision to create a space where people could enjoy various indoor games in a comfortable and social environment.</p>
+                    <p>Over the years, we've expanded our collection to include classic board games, modern table sports, and everything in between. Our facility is designed to provide the perfect setting for both casual players and serious competitors.</p>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <img src="images/about-image.jpg" alt="Indoor Games Facility">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 data-aos="fade-up">Featured Games</h2>
+            <p class="section-subtitle" data-aos="fade-up">Our Most Popular Games</p>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-aos="zoom-in">
+                    <div class="gallery-content">
+                        <img src="images/chess.jpg" alt="Chess">
+                        <div class="gallery-overlay">
+                            <h3>Chess</h3>
+                            <p>Master the game of kings</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="gallery-content">
+                        <img src="images/table-tennis.jpg" alt="Table Tennis">
+                        <div class="gallery-overlay">
+                            <h3>Table Tennis</h3>
+                            <p>Fast-paced excitement</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="gallery-content">
+                        <img src="images/monopoly.jpg" alt="Monopoly">
+                        <div class="gallery-overlay">
+                            <h3>Monopoly</h3>
+                            <p>Classic family fun</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="gallery-content">
+                        <img src="images/foosball.jpg" alt="Foosball">
+                        <div class="gallery-overlay">
+                            <h3>Foosball</h3>
+                            <p>Team competition</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="gallery-content">
+                        <img src="images/billiards.jpg" alt="Billiards">
+                        <div class="gallery-overlay">
+                            <h3>Billiards</h3>
+                            <p>Precision and strategy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="gallery-content">
+                        <img src="images/air-hockey.jpg" alt="Air Hockey">
+                        <div class="gallery-overlay">
+                            <h3>Air Hockey</h3>
+                            <p>Fast-paced table action</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games" class="grounds">
+        <div class="container">
+            <h2 data-aos="fade-up">Our Games Collection</h2>
+            <div class="grounds-grid">
+                <div class="ground-card" data-aos="flip-left">
+                    <img src="images/chess.jpg" alt="Chess">
+                    <h3>Chess</h3>
+                    <p>Classic strategy game with tournament-grade boards and pieces</p>
+                    <button class="rules-btn" onclick="showRules('chess')">View Rules</button>
+                </div>
+                <div class="ground-card" data-aos="flip-left">
+                    <img src="images/scrabble.jpg" alt="Scrabble">
+                    <h3>Scrabble</h3>
+                    <p>Word-building game with premium wooden tiles and boards</p>
+                    <button class="rules-btn" onclick="showRules('scrabble')">View Rules</button>
+                </div>
+                <div class="ground-card" data-aos="flip-left">
+                    <img src="images/table-tennis.jpg" alt="Table Tennis">
+                    <h3>Table Tennis</h3>
+                    <p>Professional ping pong tables with tournament-grade equipment</p>
+                    <button class="rules-btn" onclick="showRules('table-tennis')">View Rules</button>
+                </div>
+                <div class="ground-card" data-aos="flip-left">
+                    <img src="images/jenga.jpg" alt="Jenga">
+                    <h3>Jenga</h3>
+                    <p>Classic wooden block stacking game with premium pieces</p>
+                    <button class="rules-btn" onclick="showRules('jenga')">View Rules</button>
+                </div>
+                <div class="ground-card" data-aos="flip-left">
+                    <img src="images/uno.jpg" alt="Uno">
+                    <h3>Uno</h3>
+                    <p>Popular card game with multiple themed decks available</p>
+                    <button class="rules-btn" onclick="showRules('uno')">View Rules</button>
+                </div>
+                <div class="ground-card" data-aos="flip-left">
+                    <img src="images/carrom.jpg" alt="Carrom">
+                    <h3>Carrom</h3>
+                    <p>Traditional board game with professional-grade boards</p>
+                    <button class="rules-btn" onclick="showRules('carrom')">View Rules</button>
+                </div>
+                <div class="ground-card" data-aos="flip-left">
+                    <img src="images/pictionary.jpg" alt="Pictionary">
+                    <h3>Pictionary</h3>
+                    <p>Drawing and guessing game with large whiteboards</p>
+                    <button class="rules-btn" onclick="showRules('pictionary')">View Rules</button>
+                </div>
+                <div class="ground-card" data-aos="flip-left">
+                    <img src="images/monopoly.jpg" alt="Monopoly">
+                    <h3>Monopoly</h3>
+                    <p>Classic property trading game with multiple editions</p>
+                    <button class="rules-btn" onclick="showRules('monopoly')">View Rules</button>
+                </div>
+                <div class="ground-card" data-aos="flip-left">
+                    <img src="images/foosball.jpg" alt="Foosball">
+                    <h3>Foosball</h3>
+                    <p>Professional table football with tournament-grade tables</p>
+                    <button class="rules-btn" onclick="showRules('foosball')">View Rules</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Rules Modal -->
+    <div id="rulesModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="rulesContent"></div>
+        </div>
+    </div>
+
+    <!-- Customer Feedback Section -->
+    <section class="feedback">
+        <div class="container">
+            <h2 data-aos="fade-up">What Our Customers Say</h2>
+            <div class="feedback-slider">
+                <div class="feedback-card" data-aos="fade-up">
+                    <div class="customer-image">
+                        <img src="images/customer1.jpg" alt="John Doe">
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Amazing collection of games! The chess tournaments are world-class. I've been coming here for years and the atmosphere is always welcoming."</p>
+                    <h4>- John Doe</h4>
+                    <span class="customer-title">Chess Enthusiast</span>
+                </div>
+                <div class="feedback-card" data-aos="fade-up">
+                    <div class="customer-image">
+                        <img src="images/customer2.jpg" alt="Jane Smith">
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Best place for family game nights. The kids love the variety of games, and the staff is always helpful in explaining the rules of new games."</p>
+                    <h4>- Jane Smith</h4>
+                    <span class="customer-title">Family Regular</span>
+                </div>
+                <div class="feedback-card" data-aos="fade-up">
+                    <div class="customer-image">
+                        <img src="images/customer3.jpg" alt="Mike Johnson">
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The table tennis facilities are excellent! I've improved my game significantly since joining their weekly tournaments. Great community of players!"</p>
+                    <h4>- Mike Johnson</h4>
+                    <span class="customer-title">Table Tennis Player</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content" data-aos="fade-up">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Stay updated with our latest game nights and tournaments</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p class="section-subtitle">Get in touch with us for any inquiries</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Our Location</h3>
+                        <p>1234 Play Street, Savannah, GA 31401</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone Number</h3>
+                        <p><a href="tel:+19127559709">+1 (912) 755-9709</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email Address</h3>
+                        <p><a href="mailto:info@peedsplay.com">info@peedsplay.com</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Business Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 8:00 PM</p>
+                        <p>Saturday - Sunday: 10:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.1234567890123!2d-81.12345678901234!3d32.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fb75b5e3b5b5b5%3A0x1234567890123456!2sPEds%20Play!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Savannah, GA</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+19127559709">+1 (912) 755-9709</a></p>
+                    <p><i class="fas fa-envelope"></i> info@pedsplay.com</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#games">Our Games</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Business Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 8:00 PM</p>
+                    <p>Saturday: 10:00 AM - 6:00 PM</p>
+                    <p>Sunday: 12:00 PM - 5:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PEds Play. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
